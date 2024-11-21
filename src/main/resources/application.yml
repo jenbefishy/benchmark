@@ -1,0 +1,16 @@
+
+spring:
+  rabbitmq:
+    host: localhost
+    username: user
+    password: password
+    queue: testQueue
+    exchange: testExchange
+    routing-key: test.routing.key
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    template:
+      default-topic: testTopic
+  application:
+    name: benchmark
